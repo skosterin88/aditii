@@ -1,0 +1,552 @@
+/***********************************Non-standard fonts*******************************************************/
+
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('../font/bebas_neue/bebasneue_bold-webfont.eot');
+    src: url('../font/bebas_neue/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/bebas_neue/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('../font/bebas_neue/bebasneue_bold-webfont.woff') format('woff'),
+         url('../font/bebas_neue/bebasneue_bold-webfont.ttf') format('truetype'),
+         url('../font/bebas_neue/bebasneue_bold-webfont.svg#bebas_neuebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bebas_neuebook';
+    src: url('../font/bebas_neue/bebasneue_book-webfont.eot');
+    src: url('../font/bebas_neue/bebasneue_book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/bebas_neue/bebasneue_book-webfont.woff2') format('woff2'),
+         url('../font/bebas_neue/bebasneue_book-webfont.woff') format('woff'),
+         url('../font/bebas_neue/bebasneue_book-webfont.ttf') format('truetype'),
+         url('../font/bebas_neue/bebasneue_book-webfont.svg#bebas_neuebook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bebas_neuelight';
+    src: url('../font/bebas_neue/bebasneue_light-webfont.eot');
+    src: url('../font/bebas_neue/bebasneue_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/bebas_neue/bebasneue_light-webfont.woff2') format('woff2'),
+         url('../font/bebas_neue/bebasneue_light-webfont.woff') format('woff'),
+         url('../font/bebas_neue/bebasneue_light-webfont.ttf') format('truetype'),
+         url('../font/bebas_neue/bebasneue_light-webfont.svg#bebas_neuelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bebas_neue_regularregular';
+    src: url('../font/bebas_neue/bebasneue_regular-webfont.eot');
+    src: url('../font/bebas_neue/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/bebas_neue/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('../font/bebas_neue/bebasneue_regular-webfont.woff') format('woff'),
+         url('../font/bebas_neue/bebasneue_regular-webfont.ttf') format('truetype'),
+         url('../font/bebas_neue/bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bebas_neuethin';
+    src: url('../font/bebas_neue/bebasneue_thin-webfont.eot');
+    src: url('../font/bebas_neue/bebasneue_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/bebas_neue/bebasneue_thin-webfont.woff2') format('woff2'),
+         url('../font/bebas_neue/bebasneue_thin-webfont.woff') format('woff'),
+         url('../font/bebas_neue/bebasneue_thin-webfont.ttf') format('truetype'),
+         url('../font/bebas_neue/bebasneue_thin-webfont.svg#bebas_neuethin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+/**************************************end Non-standard fonts************************************************/
+
+html,body{
+	margin: 0;
+	padding: 0;
+	min-width: 1024px;
+}
+
+.container-center{
+	margin: 0 auto;
+	width: 1024px;
+}
+
+.btn{
+	display: inline-block;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	border-radius: 3px;
+	text-align: center;
+	font-family: 'bebas_neue_regularregular',sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	line-height: 19px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	background-color: #3cc395;
+}
+
+.btn:hover{
+	background-color: #2a373d;
+}
+
+.page-header{
+	width: 100%;
+}
+
+.page-header__top{
+	margin: 0;
+	padding: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 0;
+}
+
+.logo-wrapper{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 150px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.logo-wrapper a{
+	text-decoration: none;
+}
+
+.logo{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lobster', cursive;
+	font-size: 49px;
+	line-height: 49px;
+	color: #3cc3b5;
+}
+
+.logo:hover{
+	color: #255e7b;
+}
+
+.page-header__search-wrapper{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	margin-right: 145px;
+	padding: 0;
+	margin-right: 155px;
+}
+
+.page-header__search{
+	position: relative;
+	margin: 0;
+	padding: 12px 40px 12px 15px;
+	border: 1px solid #e1e1e1;
+	outline: none;
+	width: 380px;
+	font-size: 14px;
+	line-height: 14px;
+	background: url('../img/sprite.png') no-repeat;
+    background-position: 353px -555px;
+}
+
+.page-header__search:after{
+	content: '';
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	width: 22px;
+    height: 22px;
+
+}
+
+.cart{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	padding-left: 69px;
+}
+
+.cart__total-cost{
+	position: relative;
+	display: inline-block;
+	font-family: 'bebas_neue_regularregular', sans-serif;
+	font-size: 33px;
+	font-weight: bold;
+	color: #b6b6b6;
+}
+
+.cart__total-cost:before{
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -57px;
+	width: 41px;
+    height: 37px;
+	background: url('../img/sprite.png') no-repeat;
+    background-position: -50px -426px;
+}
+
+.main-menu{
+	width: 100%;
+	background-color: #4ccfc1;
+}
+
+.main-menu__list{
+	display: flex;
+	margin: 0;
+	padding: 9px 18px 11px 18px;
+	list-style: none;
+}
+
+.main-menu__list li{
+	position: relative;
+	flex-grow: 1;
+	text-align: center;
+}
+
+.main-menu__list li:after{
+	content: '|';
+	position: absolute;
+	top: 0;
+	right: -5px;
+	font-family: 'bebas_neue_regularregular', sans-serif;
+	font-size: 23px;
+	color: #fff;
+}
+
+.main-menu__list li:last-child:after{
+	content: '';
+}
+
+.main-menu__item{
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'bebas_neue_regularregular', sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-menu__item:hover{
+	color: #1f2f30;
+}
+
+/* .slider input[type=radio]{
+	display: none;
+} */
+
+.slider{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #3ac7b5 url('../img/pattern.png');
+}
+
+.slider input[type=radio]{
+	display: none;
+}
+
+.slider__content{
+	position: relative;
+}
+
+.slider__controls{
+	position: absolute;
+	bottom: 35px;
+	left: 460px;
+}
+
+.slider__btn-go-to-slide{
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	margin-right: 10px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.slider__btn-go-to-slide:last-child{
+	margin-right: 0;
+}
+
+.slide{
+	display: none;
+	margin: 0;
+	padding: 60px 164px 50px 70px;
+
+}
+
+.slide:nth-child(4){
+	display: block;
+}
+
+.slide__image{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	margin-right: 80px;
+	padding: 0;
+}
+
+.slide__text-wrapper{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+	width: 400px;
+}
+
+.slide__title{
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	font-family: 'bebas_neue_regularregular', sans-serif;
+	font-size: 61px;
+	line-height: 54px;
+	color: #fff;
+}
+
+.slide__text{
+	margin: 0;
+	margin-bottom: 26px;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+	line-height: 28px;
+	color: #fff;
+}
+
+.slide__btn-shop-now{
+	padding: 9px 23px;
+	border: 4px solid #fff;
+	border-radius: 6px;
+	font-size: 27px;
+	background-color: transparent;
+}
+
+.slide__btn-shop-now:hover{
+	background-color: transparent;
+	border-color: #2a373d;
+}
+
+.categories__content-wrapper{
+	position: relative;
+	font-size: 0;
+}
+
+.categories__prev,
+.categories__next{
+	position: absolute;
+	top: 0;
+}
+
+.category{
+	display: inline-block;
+	vertical-align: top;
+	border: none;
+	border-right: 2px solid #e7e7e7;
+	font-size: 0;
+	width: 340px;
+}
+
+.category:nth-of-type(3){
+	border-left: none;
+	border-right: none;
+}
+
+.category__image{
+	display: inline-block;
+	vertical-align: top;
+	max-width: 198px;
+	max-height: 190px;
+}
+
+.category__description{
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 50px;
+	width: 80px;
+}
+
+.category__title{
+	margin: 0;
+	margin-bottom: 18px;
+	padding: 0;
+	font-family: 'bebas_neue_regularregular', sans-serif;
+	font-size: 27px;
+	line-height: 27px;
+	color: #afafaf;
+}
+
+.category__btn-shop{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.featured-products__heading{
+	margin: 0;
+	padding: 0;
+	background: #39c5ba url('../img/pattern.png');
+}
+
+.featured-products__title{
+	margin: 0;
+	padding: 0;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	padding-left: 60px;
+	font-family: 'bebas_neue_regularregular', sans-serif;
+	font-size: 31px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.featured-products__items-wrapper{
+	padding: 48px 80px 72px 60px;
+}
+
+.featured-products__row{
+	margin: 0;
+	margin-left: -53px;
+	margin-bottom: 45px;
+	padding: 0;
+	font-size: 0;
+}
+
+.product-item{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 53px;
+	padding-bottom: 30px;
+	border: 1px solid #e4e4e4;
+	border-bottom: 4px solid #3cc395;
+}
+
+.product-item__description{
+	text-align: center;
+}
+
+.product-item__title{
+	margin: 0;
+	margin-bottom: 11px;
+	padding: 0;
+	font-family: 'bebas_neue_regularregular', sans-serif;
+	font-size: 27px;
+	line-height: 25px;
+	color: #afafaf;
+}
+
+.product-item__price{
+	vertical-align: middle;
+	margin: 0;
+	margin-right: 15px;
+	padding: 0;
+	font-family: 'bebas_neue_regularregular', sans-serif;
+	font-size: 27px;
+	font-weight: bold;
+	line-height: 25px;
+	color: #afafaf;
+}
+
+.product-item__btn-buy-now{
+	vertical-align: middle;
+	padding-left: 11px;
+	padding-right: 11px;
+}
+
+.primary-footer{
+
+	width: 100%;
+	background-color: #3cc3b5;
+}
+
+.primary-footer__links-wrapper{
+	padding: 60px 40px;
+	font-size: 0;
+}
+
+.primary-footer__links{
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+}
+
+.primary-footer__links-list-title{
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	font-family: 'bebas_neue_regularregular', sans-serif;
+	font-size: 27px;
+	line-height: 25px;
+	color: #fff;
+}
+
+.primary-footer__links-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 28px;
+}
+
+.primary-footer__links-list-item{
+	text-decoration: none;
+	color: #fff;
+}
+
+.primary-footer__links-list-item:hover{
+	text-decoration: underline;
+}
+
+.secondary-footer{
+	padding-top: 9px;
+	padding-bottom: 9px;
+	width: 100%;
+	background-color: #2da89b;
+}
+
+.secondary-footer__copyright{
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 28px;
+	text-align: center;
+	color: #fff;
+}
