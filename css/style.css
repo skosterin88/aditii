@@ -260,6 +260,8 @@ html,body{
 	padding-right: 20px;
 	padding-bottom: 11px;
 	padding-left: 20px;
+	-moz-padding-start: 18px;
+	-moz-padding-end: 18px;
 	/* width: 100%; */
 	text-decoration: none;
 	color: #fff;
@@ -271,6 +273,7 @@ html,body{
 
 .main-menu__list li:last-child .main-menu__item{
 	padding-right: 18px;
+	-moz-padding-end: 0;
 }
 
 .main-menu__item:hover{
