@@ -5,10 +5,95 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Aditii</title>
 	<script src="js/html5shiv.js"></script>
+	<script src ="js/jquery-1.11.3.min.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="js/selectivizr.js"></script>
+	<![endif]--> 
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		
+		@font-face {
+			font-family: 'bebas_neuebold';
+			src: url('font/bebas_neue/bebasneue_bold-webfont.eot');
+			src: url('font/bebas_neue/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+				 url('font/bebas_neue/bebasneue_bold-webfont.woff2') format('woff2'),
+				 url('font/bebas_neue/bebasneue_bold-webfont.woff') format('woff'),
+				 url('font/bebas_neue/bebasneue_bold-webfont.ttf') format('truetype'),
+				 url('font/bebas_neue/bebasneue_bold-webfont.svg#bebas_neuebold') format('svg');
+			font-weight: normal;
+			font-style: normal;
+
+		}
+
+
+
+
+		@font-face {
+			font-family: 'bebas_neuebook';
+			src: url('font/bebas_neue/bebasneue_book-webfont.eot');
+			src: url('font/bebas_neue/bebasneue_book-webfont.eot?#iefix') format('embedded-opentype'),
+				 url('font/bebas_neue/bebasneue_book-webfont.woff2') format('woff2'),
+				 url('font/bebas_neue/bebasneue_book-webfont.woff') format('woff'),
+				 url('font/bebas_neue/bebasneue_book-webfont.ttf') format('truetype'),
+				 url('font/bebas_neue/bebasneue_book-webfont.svg#bebas_neuebook') format('svg');
+			font-weight: normal;
+			font-style: normal;
+
+		}
+
+
+
+
+		@font-face {
+			font-family: 'bebas_neuelight';
+			src: url('font/bebas_neue/bebasneue_light-webfont.eot');
+			src: url('font/bebas_neue/bebasneue_light-webfont.eot?#iefix') format('embedded-opentype'),
+				 url('font/bebas_neue/bebasneue_light-webfont.woff2') format('woff2'),
+				 url('font/bebas_neue/bebasneue_light-webfont.woff') format('woff'),
+				 url('font/bebas_neue/bebasneue_light-webfont.ttf') format('truetype'),
+				 url('font/bebas_neue/bebasneue_light-webfont.svg#bebas_neuelight') format('svg');
+			font-weight: normal;
+			font-style: normal;
+
+		}
+
+
+
+
+		@font-face {
+			font-family: 'bebas_neue_regularregular';
+			src: url('font/bebas_neue/bebasneue_regular-webfont.eot');
+			src: url('font/bebas_neue/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+				 url('font/bebas_neue/bebasneue_regular-webfont.woff2') format('woff2'),
+				 url('font/bebas_neue/bebasneue_regular-webfont.woff') format('woff'),
+				 url('font/bebas_neue/bebasneue_regular-webfont.ttf') format('truetype'),
+				 url('font/bebas_neue/bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+			font-weight: normal;
+			font-style: normal;
+
+		}
+
+
+
+
+		@font-face {
+			font-family: 'bebas_neuethin';
+			src: url('font/bebas_neue/bebasneue_thin-webfont.eot');
+			src: url('font/bebas_neue/bebasneue_thin-webfont.eot?#iefix') format('embedded-opentype'),
+				 url('font/bebas_neue/bebasneue_thin-webfont.woff2') format('woff2'),
+				 url('font/bebas_neue/bebasneue_thin-webfont.woff') format('woff'),
+				 url('font/bebas_neue/bebasneue_thin-webfont.ttf') format('truetype'),
+				 url('font/bebas_neue/bebasneue_thin-webfont.svg#bebas_neuethin') format('svg');
+			font-weight: normal;
+			font-style: normal;
+
+		}
+
+	</style>
+
 </head>
 <body>
 	<header class="page-header">
@@ -105,27 +190,29 @@
 			<div class="container-center">
 				<div class="categories__content-wrapper">
 					<a href="#" class="categories__prev">Prev</a>
-					<section class="category">
-						<img class="category__image" src="pic/male-shoes1.jpg" alt="Branded shoes">
-						<div class="category__description">
-							<h3 class="category__title">Branded shoes</h3>
-							<a href="#" class="btn category__btn-shop">Shop</a>
-						</div>
-					</section>
-					<section class="category">
-						<img class="category__image" src="pic/tshirt.png" alt="Branded T-shirts">
-						<div class="category__description">
-							<h3 class="category__title">Branded T-shirts</h3>
-							<a href="#" class="btn category__btn-shop">Shop</a>
-						</div>
-					</section>
-					<section class="category">
-						<img class="category__image" src="pic/male-shoes2.jpg" alt="Branded shoes">
-						<div class="category__description">
-							<h3 class="category__title">Branded shoes</h3>
-							<a href="#" class="btn category__btn-shop">Shop</a>
-						</div>
-					</section>
+					<div class="categories__row">
+						<section class="category">
+							<img class="category__image" src="pic/male-shoes1.jpg" alt="Branded shoes">
+							<div class="category__description">
+								<h3 class="category__title">Branded shoes</h3>
+								<a href="#" class="btn category__btn-shop">Shop</a>
+							</div>
+						</section>
+						<section class="category">
+							<img class="category__image" src="pic/tshirt.png" alt="Branded T-shirts">
+							<div class="category__description">
+								<h3 class="category__title">Branded T-shirts</h3>
+								<a href="#" class="btn category__btn-shop">Shop</a>
+							</div>
+						</section>
+						<section class="category">
+							<img class="category__image" src="pic/male-shoes2.jpg" alt="Branded shoes">
+							<div class="category__description">
+								<h3 class="category__title">Branded shoes</h3>
+								<a href="#" class="btn category__btn-shop">Shop</a>
+							</div>
+						</section>
+					</div>
 					<a href="#" class="categories__next">Next</a>
 				</div>
 			</div>
