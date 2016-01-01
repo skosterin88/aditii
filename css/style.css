@@ -3,7 +3,7 @@
 html,body{
 	margin: 0;
 	padding: 0;
-	min-width: 1024px;
+	min-width: 1280px;
 }
 
 .container-center{
@@ -362,9 +362,24 @@ html,body{
 
 .categories__prev,
 .categories__next{
+	content: '';
 	position: absolute;
-	display: none;
-	top: 0;
+	width: 29px;
+	height: 88px;
+	background: #fff url('../img/sprite.png') no-repeat;
+	z-index: 1000;
+}
+
+.categories__prev{
+	left: -90px;
+	top: 50px;
+	background-position: -50px -240px;
+}
+
+.categories__next{
+	right: -90px;
+	top: 50px;
+	background-position: -50px -50px;
 }
 
 .categories__row{
